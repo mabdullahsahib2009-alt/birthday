@@ -1,0 +1,434 @@
+```html id="birthday-bonnie-site"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Bonnie 🎀</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#ffe3ec,#fff0f5,#ffeaf4);
+      overflow-x:hidden;
+      color:#6b2d4b;
+    }
+
+    section{
+      min-height:100vh;
+      padding:80px 20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+    }
+
+    .container{
+      width:100%;
+      max-width:1100px;
+      background:rgba(255,255,255,0.55);
+      backdrop-filter:blur(12px);
+      border-radius:35px;
+      padding:55px;
+      box-shadow:0 10px 40px rgba(255,105,180,0.18);
+      animation:fade 1.5s ease;
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .floating-hearts span{
+      position:absolute;
+      font-size:25px;
+      animation:float 10s linear infinite;
+      opacity:0.6;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(100vh) scale(0);
+      }
+      100%{
+        transform:translateY(-120vh) scale(1.5);
+      }
+    }
+
+    h1{
+      font-family:'Great Vibes',cursive;
+      font-size:5.5rem;
+      color:#ff2f7d;
+      text-align:center;
+      margin-bottom:15px;
+    }
+
+    h2{
+      text-align:center;
+      color:#d63384;
+      font-size:2rem;
+      margin-bottom:25px;
+    }
+
+    h3{
+      color:#ff2f7d;
+      margin-bottom:15px;
+    }
+
+    p{
+      line-height:2;
+      font-size:1.05rem;
+    }
+
+    .center{
+      text-align:center;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:15px 35px;
+      border-radius:50px;
+      background:#ff4f87;
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+      box-shadow:0 6px 18px rgba(255,79,135,0.35);
+    }
+
+    .btn:hover{
+      transform:scale(1.08);
+      background:#ff2f7d;
+    }
+
+    .bouquet{
+      font-size:7rem;
+      text-align:center;
+      margin:25px 0;
+      animation:pulse 2s infinite;
+    }
+
+    @keyframes pulse{
+      0%,100%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.08);
+      }
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:white;
+      border-radius:25px;
+      padding:30px 25px;
+      box-shadow:0 8px 22px rgba(255,105,180,0.15);
+      transition:0.4s;
+      text-align:center;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .emoji{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    .gift-box{
+      text-align:center;
+      margin-top:40px;
+    }
+
+    .gift{
+      font-size:7rem;
+      cursor:pointer;
+      transition:0.4s;
+    }
+
+    .gift:hover{
+      transform:rotate(8deg) scale(1.1);
+    }
+
+    .surprise-message{
+      display:none;
+      margin-top:30px;
+      background:white;
+      padding:30px;
+      border-radius:25px;
+      box-shadow:0 8px 20px rgba(255,105,180,0.15);
+      animation:fade 1s ease;
+    }
+
+    .long-message{
+      margin-top:30px;
+      background:white;
+      padding:35px;
+      border-radius:30px;
+      box-shadow:0 8px 22px rgba(255,105,180,0.15);
+    }
+
+    footer{
+      padding:35px;
+      text-align:center;
+      color:#7a3557;
+      font-weight:600;
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:3.5rem;
+      }
+
+      h2{
+        font-size:1.5rem;
+      }
+
+      .container{
+        padding:35px 20px;
+      }
+
+      .bouquet{
+        font-size:5rem;
+      }
+
+      .gift{
+        font-size:5rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="floating-hearts">
+    <span style="left:5%; animation-delay:0s;">❤️</span>
+    <span style="left:15%; animation-delay:2s;">🎀</span>
+    <span style="left:25%; animation-delay:4s;">🌸</span>
+    <span style="left:40%; animation-delay:1s;">💖</span>
+    <span style="left:55%; animation-delay:5s;">✨</span>
+    <span style="left:70%; animation-delay:3s;">🎂</span>
+    <span style="left:85%; animation-delay:6s;">💕</span>
+  </div>
+
+  <!-- PAGE 1 -->
+  <section>
+
+    <div class="container center">
+
+      <h1>Happy Birthday Bonnie 🎀</h1>
+
+      <h2>Turning 24 on 10 May 2026 🎂✨</h2>
+
+      <div class="bouquet">
+        💐🌸🌹
+      </div>
+
+      <p style="font-size:1.2rem;">
+        A bouquet for the prettiest soul with the softest heart ❤️
+      </p>
+
+      <p style="margin-top:25px;">
+        May Allah always keep you smiling, successful, peaceful and surrounded by happiness 🌸
+        <br>
+        May every dream of yours come true and may your life always stay beautiful 💖
+      </p>
+
+      <p style="margin-top:25px;font-size:1.2rem;font-weight:600;">
+        — From Shampiii 😶‍🌫️
+      </p>
+
+      <a href="#surprise" class="btn">
+        Open For Surprise 🎁
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- PAGE 2 -->
+  <section id="surprise">
+
+    <div class="container">
+
+      <h2>Something Special For Bonnie 🎀❤️</h2>
+
+      <div class="gift-box">
+
+        <div class="gift" onclick="openGift()">
+          🎁
+        </div>
+
+        <p style="margin-top:20px;">
+          Tap the gift for a surprise ✨
+        </p>
+
+        <div class="surprise-message" id="giftMessage">
+
+          <h3 style="text-align:center;">
+            Surprise Opened 💖
+          </h3>
+
+          <p class="center">
+            You are genuinely one of the most beautiful parts of life 🌸❤️
+            <br><br>
+            Your smile, your efforts, your kindness and your memories
+            will always stay special ✨
+          </p>
+
+          <div class="bouquet">
+            🌹💐🌸🎀
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="emoji">🌸</div>
+
+          <h3>Beautiful Smile</h3>
+
+          <p>
+            Hasti hoi bhttttttt pyari lagti ho ❤️
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🎀</div>
+
+          <h3>Special Efforts</h3>
+
+          <p>
+            Your little efforts always meant the world 🥺
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">💖</div>
+
+          <h3>Sweet Memories</h3>
+
+          <p>
+            You became one of the most beautiful memories of life ✨
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PAGE 3 -->
+  <section>
+
+    <div class="container">
+
+      <h2>3 Promises For You ❤️</h2>
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="emoji">🤍</div>
+
+          <h3>Promise 1</h3>
+
+          <p>
+            I will never discuss you in people.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <div class="emoji">🛡️</div>
+
+          <h3>Promise 2</h3>
+
+          <p>
+            I will protect your respect behind your back.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <div class="emoji">🥺</div>
+
+          <h3>Promise 3</h3>
+
+          <p>
+            I will never make you cry because of me.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="bouquet">
+        💐🌹✨
+      </div>
+
+      <div class="long-message">
+
+        <h3 style="text-align:center;">
+          A Long Message From Shampiii 😶‍🌫️
+        </h3>
+
+        <p>
+          Happiest Birthday Saba Raza(Bonnie🎀) ❤️🎂🎉...Allah tumhay hamesha khush rakhay or hasta basta rakhay❤️...Allah tumhari har jaiz khawaishat ko poray karay or kabi kisi cheez ke kami nah anay day Ameen❤️...you are the fav part or journey of my life which make me feel sooooooooo happy short time ka lea he sai lakin bhtttttt acha laga tha tumharay sath....tum meri zindagi ke haseen yado main say ak yad ho balkay tum meri zindagi ke wahid haseen yad ho...you make me feel soo special wo tumhara meray lea choti choti effort karna jo ka meray lea bhttttttt bari or special thi...mujy koe cheez achi lagti thi tum wo mujy delanay ka soachnay lagti thi or dila be deti thi...wo tumhara meray lea album cards banna ho ya keychain pay meray lea likha ho❤️🥺...thank you soooooooooo much for everything literally for everything❤️🥺....ab future charted accountant ka ak paper rah gya hai wo dehan say parh ka pass kar lay phr kisi achi see firm main jay gee apnay or apnay maah baap ka sapnay be poray karay gee In Shaa Allah zaror❤️...again happiest birthday Bonnie🎀❤️.... Allah Pak tumhay hamesha khush rakhay hasti hoi bhttttttttttttttttt pyari lagti ho bus hasti rha kro❤️....agar zindagi main kabi be meri zarort paray tu mujy yad kar laina bus ak awaz par tumharay pass aa jao ga❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    Made With Endless Love, Duas & Beautiful Memories ❤️ <br>
+    For Bonnie 🎀 — By Shampiii 😶‍🌫️
+  </footer>
+
+  <script>
+
+    function openGift(){
+      document.getElementById("giftMessage").style.display = "block";
+    }
+
+  </script>
+
+</body>
+</html>
+```
